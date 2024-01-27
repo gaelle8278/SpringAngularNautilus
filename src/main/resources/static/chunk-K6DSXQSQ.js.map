@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/book-management/components/new-book/new-book.component.ts", "src/app/book-management/components/new-book/new-book.component.html", "src/app/book-management/book-management.routes.ts"],
+  "sourcesContent": ["import { Component } from '@angular/core';\nimport { Router } from '@angular/router';\n\n@Component({\n  selector: 'app-new-book',\n  standalone: true,\n  imports: [],\n  templateUrl: './new-book.component.html',\n  styleUrl: './new-book.component.scss'\n})\nexport class NewBookComponent {\n\t\n\tconstructor(private router : Router) {}\n\n}\n", "<p>new-book works!</p>\n", "import { Routes } from \"@angular/router\";\r\nimport { NewBookComponent } from \"./components/new-book/new-book.component\";\r\nimport { AuthGuard } from \"../core/guards/auth.guard\";\r\n\r\nexport const bookManagementRoutes: Routes = [ \r\n    {path : 'create', component : NewBookComponent, canActivate :[AuthGuard]}\r\n   \r\n];"],
+  "mappings": ";;;;;;;;;;;;;AAUM,IAAO,oBAAP,MAAO,kBAAgB;EAE5B,YAAoB,QAAe;AAAf,SAAA,SAAA;EAAkB;;;mBAF1B,mBAAgB,4BAAA,MAAA,CAAA;AAAA;kFAAhB,mBAAgB,WAAA,CAAA,CAAA,cAAA,CAAA,GAAA,YAAA,MAAA,UAAA,CAAA,6BAAA,GAAA,OAAA,GAAA,MAAA,GAAA,UAAA,SAAA,0BAAA,IAAA,KAAA;AAAA,MAAA,KAAA,GAAA;ACV7B,IAAA,yBAAA,GAAA,GAAA;AAAG,IAAA,iBAAA,GAAA,iBAAA;AAAe,IAAA,uBAAA;;;ADUZ,IAAO,mBAAP;;6EAAO,kBAAgB,EAAA,WAAA,oBAAA,UAAA,0EAAA,YAAA,GAAA,CAAA;AAAA,GAAA;;;AENtB,IAAM,uBAA+B;EACxC,EAAC,MAAO,UAAU,WAAY,kBAAkB,aAAa,CAAC,SAAS,EAAC;;",
+  "names": []
+}
